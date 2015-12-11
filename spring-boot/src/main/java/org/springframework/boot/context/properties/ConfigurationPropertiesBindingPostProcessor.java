@@ -89,7 +89,7 @@ public class ConfigurationPropertiesBindingPostProcessor implements BeanPostProc
 
 	private Validator validator;
 
-	private boolean ownedValidator = false;
+	private boolean ownedValidator;
 
 	private ConversionService conversionService;
 

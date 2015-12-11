@@ -585,12 +585,12 @@ public class ServerProperties
 		/**
 		 * Maximum amount of worker threads.
 		 */
-		private int maxThreads = 0; // Number of threads in protocol handler
+		private int maxThreads; // Number of threads in protocol handler
 
 		/**
 		 * Maximum size in bytes of the HTTP message header.
 		 */
-		private int maxHttpHeaderSize = 0; // bytes
+		private int maxHttpHeaderSize; // bytes
 
 		/**
 		 * Character encoding to use to decode the URI.
@@ -827,7 +827,7 @@ public class ServerProperties
 			/**
 			 * Enable access log.
 			 */
-			private boolean enabled = false;
+			private boolean enabled;
 
 			/**
 			 * Format pattern for access logs.
@@ -1056,7 +1056,7 @@ public class ServerProperties
 			/**
 			 * Enable access log.
 			 */
-			private boolean enabled = false;
+			private boolean enabled;
 
 			/**
 			 * Format pattern for access logs.

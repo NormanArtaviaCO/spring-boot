@@ -32,7 +32,7 @@ public class HealthIndicatorAutoConfigurationProperties {
 	/**
 	 * Comma-separated list of health statuses in order of severity.
 	 */
-	private List<String> order = null;
+	private List<String> order;
 
 	public List<String> getOrder() {
 		return this.order;

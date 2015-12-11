@@ -50,7 +50,7 @@ class ProjectLibraries implements Libraries {
 
 	private String providedConfigurationName = "providedRuntime";
 
-	private String customConfigurationName = null;
+	private String customConfigurationName;
 
 	/**
 	 * Create a new {@link ProjectLibraries} instance of the specified {@link Project}.

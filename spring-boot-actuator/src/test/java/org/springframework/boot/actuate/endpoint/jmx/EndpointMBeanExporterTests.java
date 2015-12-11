@@ -58,7 +58,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class EndpointMBeanExporterTests {
 
-	GenericApplicationContext context = null;
+	GenericApplicationContext context;
 
 	@After
 	public void close() {

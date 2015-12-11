@@ -110,7 +110,7 @@ public class Restarter {
 
 	private final RestartListener[] listeners;
 
-	private boolean finished = false;
+	private boolean finished;
 
 	private Lock stopLock = new ReentrantLock();
 

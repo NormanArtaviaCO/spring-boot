@@ -129,7 +129,7 @@ public class DocsMvcEndpoint extends WebMvcConfigurerAdapter
 		/**
 		 * Enable the curie generation.
 		 */
-		private boolean enabled = false;
+		private boolean enabled;
 
 		public boolean isEnabled() {
 			return this.enabled;

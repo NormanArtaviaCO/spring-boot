@@ -54,9 +54,9 @@ public class HealthMvcEndpointTests {
 			Collections.<String, Object>singletonMap("endpoints.health.sensitive",
 					"false"));
 
-	private HealthEndpoint endpoint = null;
+	private HealthEndpoint endpoint;
 
-	private HealthMvcEndpoint mvc = null;
+	private HealthMvcEndpoint mvc;
 
 	private MockEnvironment environment;
 

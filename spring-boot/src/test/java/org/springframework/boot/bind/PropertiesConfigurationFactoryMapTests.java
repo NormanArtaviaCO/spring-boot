@@ -46,7 +46,7 @@ public class PropertiesConfigurationFactoryMapTests {
 
 	private boolean ignoreUnknownFields = true;
 
-	private String targetName = null;
+	private String targetName;
 
 	@Test
 	public void testValidPropertiesLoadsWithNoErrors() throws Exception {

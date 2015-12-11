@@ -79,7 +79,7 @@ public class UndertowEmbeddedServletContainer implements EmbeddedServletContaine
 
 	private Undertow undertow;
 
-	private boolean started = false;
+	private boolean started;
 
 	public UndertowEmbeddedServletContainer(Builder builder, DeploymentManager manager,
 			String contextPath, int port, boolean autoStart, Compression compression) {

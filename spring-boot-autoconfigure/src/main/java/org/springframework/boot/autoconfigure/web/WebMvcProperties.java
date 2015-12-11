@@ -55,12 +55,12 @@ public class WebMvcProperties {
 	/**
 	 * Dispatch TRACE requests to the FrameworkServlet doService method.
 	 */
-	private boolean dispatchTraceRequest = false;
+	private boolean dispatchTraceRequest;
 
 	/**
 	 * Dispatch OPTIONS requests to the FrameworkServlet doService method.
 	 */
-	private boolean dispatchOptionsRequest = false;
+	private boolean dispatchOptionsRequest;
 
 	/**
 	 * If the content of the "default" model should be ignored during redirect scenarios.
@@ -71,7 +71,7 @@ public class WebMvcProperties {
 	 * If a "NoHandlerFoundException" should be thrown if no Handler was found to process
 	 * a request.
 	 */
-	private boolean throwExceptionIfNoHandlerFound = false;
+	private boolean throwExceptionIfNoHandlerFound;
 
 	/**
 	 * Maps file extensions to media types for content negotiation, e.g. yml->text/yaml.

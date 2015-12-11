@@ -44,7 +44,7 @@ public abstract class AbstractMetricExporter implements Exporter {
 
 	private Date earliestTimestamp = new Date();
 
-	private boolean ignoreTimestamps = false;
+	private boolean ignoreTimestamps;
 
 	private boolean sendLatest = true;
 

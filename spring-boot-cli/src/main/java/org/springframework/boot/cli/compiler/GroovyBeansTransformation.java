@@ -73,7 +73,7 @@ public class GroovyBeansTransformation implements ASTTransformation {
 
 		private final ClassNode classNode;
 
-		private boolean xformed = false;
+		private boolean xformed;
 
 		ClassVisitor(SourceUnit source, ClassNode classNode) {
 			this.source = source;

@@ -81,7 +81,7 @@ public class SpringApplicationBuilder {
 
 	private boolean registerShutdownHookApplied;
 
-	private boolean configuredAsChild = false;
+	private boolean configuredAsChild;
 
 	public SpringApplicationBuilder(Object... sources) {
 		this.application = createSpringApplication(sources);

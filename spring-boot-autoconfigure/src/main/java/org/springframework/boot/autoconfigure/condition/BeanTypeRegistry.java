@@ -235,7 +235,7 @@ abstract class BeanTypeRegistry {
 
 		private final Map<String, Class<?>> beanTypes = new HashMap<String, Class<?>>();
 
-		private int lastBeanDefinitionCount = 0;
+		private int lastBeanDefinitionCount;
 
 		OptimizedBeanTypeRegistry(DefaultListableBeanFactory beanFactory) {
 			this.beanFactory = beanFactory;

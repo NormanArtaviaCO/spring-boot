@@ -45,7 +45,7 @@ public class DependencyResolutionContext {
 
 	private final List<Dependency> managedDependencies = new ArrayList<Dependency>();
 
-	private DependencyManagement dependencyManagement = null;
+	private DependencyManagement dependencyManagement;
 
 	private ArtifactCoordinatesResolver artifactCoordinatesResolver;
 

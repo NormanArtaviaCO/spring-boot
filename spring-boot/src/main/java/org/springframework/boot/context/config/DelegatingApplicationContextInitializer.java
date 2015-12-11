@@ -46,7 +46,7 @@ public class DelegatingApplicationContextInitializer implements
 
 	private static final String PROPERTY_NAME = "context.initializer.classes";
 
-	private int order = 0;
+	private int order;
 
 	@Override
 	public void initialize(ConfigurableApplicationContext context) {

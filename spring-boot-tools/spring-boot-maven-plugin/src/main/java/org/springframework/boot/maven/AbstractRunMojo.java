@@ -70,7 +70,7 @@ public abstract class AbstractRunMojo extends AbstractDependencyFilterMojo {
 	 * @since 1.0
 	 */
 	@Parameter(property = "run.addResources", defaultValue = "false")
-	private boolean addResources = false;
+	private boolean addResources;
 
 	/**
 	 * Path to agent jar. NOTE: the use of agents means that processes will be started by

@@ -56,7 +56,7 @@ class DataSourceInitializer implements ApplicationListener<DataSourceInitialized
 	@Autowired
 	private DataSourceProperties properties;
 
-	private boolean initialized = false;
+	private boolean initialized;
 
 	@PostConstruct
 	public void init() {

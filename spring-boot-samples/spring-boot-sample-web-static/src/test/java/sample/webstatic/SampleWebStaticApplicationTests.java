@@ -45,7 +45,7 @@ import static org.junit.Assert.assertTrue;
 public class SampleWebStaticApplicationTests {
 
 	@Value("${local.server.port}")
-	private int port = 0;
+	private int port;
 
 	@Test
 	public void testHome() throws Exception {

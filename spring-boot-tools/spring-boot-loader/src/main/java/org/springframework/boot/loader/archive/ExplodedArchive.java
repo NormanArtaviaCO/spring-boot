@@ -56,7 +56,7 @@ public class ExplodedArchive extends Archive {
 
 	private Manifest manifest;
 
-	private boolean filtered = false;
+	private boolean filtered;
 
 	/**
 	 * Create a new {@link ExplodedArchive} instance.

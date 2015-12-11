@@ -50,7 +50,7 @@ public class WebRequestTraceFilter extends OncePerRequestFilter implements Order
 
 	private final Log logger = LogFactory.getLog(WebRequestTraceFilter.class);
 
-	private boolean dumpRequests = false;
+	private boolean dumpRequests;
 
 	// Not LOWEST_PRECEDENCE, but near the end, so it has a good chance of catching all
 	// enriched headers, but users can add stuff after this if they want to

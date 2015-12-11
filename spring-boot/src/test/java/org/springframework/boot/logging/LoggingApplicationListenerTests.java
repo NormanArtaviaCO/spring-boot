@@ -488,7 +488,7 @@ public class LoggingApplicationListenerTests {
 
 	public static final class TestCleanupLoggingSystem extends LoggingSystem {
 
-		private boolean cleanedUp = false;
+		private boolean cleanedUp;
 
 		public TestCleanupLoggingSystem(ClassLoader classLoader) {
 

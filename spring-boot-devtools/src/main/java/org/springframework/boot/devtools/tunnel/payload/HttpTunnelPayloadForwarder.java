@@ -36,7 +36,7 @@ public class HttpTunnelPayloadForwarder {
 
 	private final WritableByteChannel targetChannel;
 
-	private long lastRequestSeq = 0;
+	private long lastRequestSeq;
 
 	private final Map<Long, HttpTunnelPayload> queue = new HashMap<Long, HttpTunnelPayload>();
 

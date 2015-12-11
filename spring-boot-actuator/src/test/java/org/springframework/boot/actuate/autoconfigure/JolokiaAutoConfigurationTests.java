@@ -154,7 +154,7 @@ public class JolokiaAutoConfigurationTests {
 	@EnableConfigurationProperties
 	protected static class Config {
 
-		protected static MockEmbeddedServletContainerFactory containerFactory = null;
+		protected static MockEmbeddedServletContainerFactory containerFactory;
 
 		@Bean
 		public EmbeddedServletContainerFactory containerFactory() {

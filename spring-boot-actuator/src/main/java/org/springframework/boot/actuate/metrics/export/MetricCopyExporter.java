@@ -194,7 +194,7 @@ public class MetricCopyExporter extends AbstractMetricExporter {
 
 	private class PatternMatchingIterator implements Iterator<Metric<?>> {
 
-		private Metric<?> buffer = null;
+		private Metric<?> buffer;
 
 		private Iterator<Metric<?>> iterator;
 

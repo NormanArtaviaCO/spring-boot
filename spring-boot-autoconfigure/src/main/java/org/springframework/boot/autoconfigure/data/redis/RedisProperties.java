@@ -31,7 +31,7 @@ public class RedisProperties {
 	/**
 	 * Database index used by the connection factory.
 	 */
-	private int database = 0;
+	private int database;
 
 	/**
 	 * Redis server host.
@@ -128,7 +128,7 @@ public class RedisProperties {
 		 * Target for the minimum number of idle connections to maintain in the pool. This
 		 * setting only has an effect if it is positive.
 		 */
-		private int minIdle = 0;
+		private int minIdle;
 
 		/**
 		 * Max number of connections that can be allocated by the pool at a given time.

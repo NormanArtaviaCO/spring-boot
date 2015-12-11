@@ -368,7 +368,7 @@ public class HttpTunnelServer {
 
 		private ServerHttpAsyncRequestControl async;
 
-		private volatile boolean complete = false;
+		private volatile boolean complete;
 
 		public HttpConnection(ServerHttpRequest request, ServerHttpResponse response) {
 			this.createTime = System.currentTimeMillis();

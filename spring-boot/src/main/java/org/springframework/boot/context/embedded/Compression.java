@@ -28,7 +28,7 @@ public class Compression {
 	/**
 	 * If response compression is enabled.
 	 */
-	private boolean enabled = false;
+	private boolean enabled;
 
 	/**
 	 * Comma-separated list of MIME types that should be compressed.
@@ -39,7 +39,7 @@ public class Compression {
 	/**
 	 * Comma-separated list of user agents for which responses should not be compressed.
 	 */
-	private String[] excludedUserAgents = null;
+	private String[] excludedUserAgents;
 
 	/**
 	 * Minimum response size that is required for compression to be performed.

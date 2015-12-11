@@ -50,19 +50,19 @@ public abstract class AbstractTemplateViewResolverProperties
 	 * Set whether all request attributes should be added to the model prior to merging
 	 * with the template.
 	 */
-	private boolean exposeRequestAttributes = false;
+	private boolean exposeRequestAttributes;
 
 	/**
 	 * Set whether all HttpSession attributes should be added to the model prior to
 	 * merging with the template.
 	 */
-	private boolean exposeSessionAttributes = false;
+	private boolean exposeSessionAttributes;
 
 	/**
 	 * Set whether HttpServletRequest attributes are allowed to override (hide) controller
 	 * generated model attributes of the same name.
 	 */
-	private boolean allowRequestOverride = false;
+	private boolean allowRequestOverride;
 
 	/**
 	 * Set whether to expose a RequestContext for use by Spring's macro library, under the
@@ -74,7 +74,7 @@ public abstract class AbstractTemplateViewResolverProperties
 	 * Set whether HttpSession attributes are allowed to override (hide) controller
 	 * generated model attributes of the same name.
 	 */
-	private boolean allowSessionOverride = false;
+	private boolean allowSessionOverride;
 
 	protected AbstractTemplateViewResolverProperties(String defaultPrefix,
 			String defaultSuffix) {

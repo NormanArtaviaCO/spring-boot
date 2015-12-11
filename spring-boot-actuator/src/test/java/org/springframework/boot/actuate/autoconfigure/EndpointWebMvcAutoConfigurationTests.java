@@ -542,7 +542,7 @@ public class EndpointWebMvcAutoConfigurationTests {
 	@Configuration
 	public static class ServerPortConfig {
 
-		private int count = 0;
+		private int count;
 
 		public int getCount() {
 			return this.count;
@@ -602,7 +602,7 @@ public class EndpointWebMvcAutoConfigurationTests {
 		}
 
 		protected static class TestInterceptor extends HandlerInterceptorAdapter {
-			private int count = 0;
+			private int count;
 
 			@Override
 			public void postHandle(HttpServletRequest request,

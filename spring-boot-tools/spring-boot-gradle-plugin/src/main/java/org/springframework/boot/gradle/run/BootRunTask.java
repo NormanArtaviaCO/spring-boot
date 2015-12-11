@@ -43,7 +43,7 @@ public class BootRunTask extends JavaExec {
 	 * directory to prevent them from appearing twice if
 	 * {@code ClassLoader.getResources()} is called.
 	 */
-	private boolean addResources = false;
+	private boolean addResources;
 
 	public boolean getAddResources() {
 		return this.addResources;

@@ -50,7 +50,7 @@ public class PropertiesConfigurationFactoryPerformanceTests {
 
 	private boolean ignoreUnknownFields = true;
 
-	private String targetName = null;
+	private String targetName;
 
 	private static StandardEnvironment environment = new StandardEnvironment();
 

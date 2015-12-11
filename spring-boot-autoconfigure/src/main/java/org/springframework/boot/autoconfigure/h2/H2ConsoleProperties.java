@@ -40,7 +40,7 @@ public class H2ConsoleProperties {
 	/**
 	 * Enable the console.
 	 */
-	private boolean enabled = false;
+	private boolean enabled;
 
 	public String getPath() {
 		return this.path;

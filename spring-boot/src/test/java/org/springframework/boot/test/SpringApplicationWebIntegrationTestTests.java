@@ -53,10 +53,10 @@ import static org.junit.Assert.assertSame;
 public class SpringApplicationWebIntegrationTestTests {
 
 	@Value("${local.server.port}")
-	private int port = 0;
+	private int port;
 
 	@Value("${value}")
-	private int value = 0;
+	private int value;
 
 	@Autowired
 	private WebApplicationContext context;

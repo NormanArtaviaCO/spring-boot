@@ -40,7 +40,7 @@ public class MultipartConfigFactory {
 
 	private long maxRequestSize = -1;
 
-	private int fileSizeThreshold = 0;
+	private int fileSizeThreshold;
 
 	/**
 	 * Sets the directory location where files will be stored.

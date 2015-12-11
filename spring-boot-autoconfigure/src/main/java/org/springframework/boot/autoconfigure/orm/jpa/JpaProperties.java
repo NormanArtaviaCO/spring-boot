@@ -56,12 +56,12 @@ public class JpaProperties {
 	/**
 	 * Initialize the schema on startup.
 	 */
-	private boolean generateDdl = false;
+	private boolean generateDdl;
 
 	/**
 	 * Enable logging of SQL statements.
 	 */
-	private boolean showSql = false;
+	private boolean showSql;
 
 	private Hibernate hibernate = new Hibernate();
 

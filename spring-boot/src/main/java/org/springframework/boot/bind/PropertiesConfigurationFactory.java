@@ -76,9 +76,9 @@ public class PropertiesConfigurationFactory<T>
 
 	private MessageSource messageSource;
 
-	private boolean hasBeenBound = false;
+	private boolean hasBeenBound;
 
-	private boolean ignoreNestedProperties = false;
+	private boolean ignoreNestedProperties;
 
 	private String targetName;
 

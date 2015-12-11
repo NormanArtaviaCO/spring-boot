@@ -197,9 +197,9 @@ public class RestarterTests {
 	@EnableScheduling
 	public static class SampleApplication {
 
-		private int count = 0;
+		private int count;
 
-		private static volatile boolean quit = false;
+		private static volatile boolean quit;
 
 		@Scheduled(fixedDelay = 200)
 		public void tickBean() {

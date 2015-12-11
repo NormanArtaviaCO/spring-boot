@@ -56,7 +56,7 @@ public class EndpointHandlerMapping extends RequestMappingHandlerMapping {
 
 	private String prefix = "";
 
-	private boolean disabled = false;
+	private boolean disabled;
 
 	/**
 	 * Create a new {@link EndpointHandlerMapping} instance. All {@link Endpoint}s will be

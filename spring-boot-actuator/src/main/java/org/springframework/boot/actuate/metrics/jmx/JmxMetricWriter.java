@@ -136,7 +136,7 @@ public class JmxMetricWriter implements MetricWriter {
 
 		private double value;
 
-		private long lastUpdated = 0;
+		private long lastUpdated;
 
 		public void setValue(double value) {
 			if (this.value != value) {

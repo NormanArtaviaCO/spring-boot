@@ -112,7 +112,7 @@ public class DataSourceProperties
 	/**
 	 * Do not stop if an error occurs while initializing the database.
 	 */
-	private boolean continueOnError = false;
+	private boolean continueOnError;
 
 	/**
 	 * Statement separator in SQL initialization scripts.

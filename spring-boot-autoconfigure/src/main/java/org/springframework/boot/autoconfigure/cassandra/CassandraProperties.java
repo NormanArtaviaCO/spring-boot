@@ -115,7 +115,7 @@ public class CassandraProperties {
 	/**
 	 * Enable SSL support.
 	 */
-	private boolean ssl = false;
+	private boolean ssl;
 
 	public String getKeyspaceName() {
 		return this.keyspaceName;

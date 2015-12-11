@@ -39,7 +39,7 @@ public class EndpointMBeanExportProperties {
 	/**
 	 * Ensure that ObjectNames are modified in case of conflict.
 	 */
-	private boolean uniqueNames = false;
+	private boolean uniqueNames;
 
 	/**
 	 * Enable the JMX endpoints.

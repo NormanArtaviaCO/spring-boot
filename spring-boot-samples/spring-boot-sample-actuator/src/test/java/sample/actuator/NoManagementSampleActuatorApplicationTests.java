@@ -49,7 +49,7 @@ public class NoManagementSampleActuatorApplicationTests {
 	private SecurityProperties security;
 
 	@Value("${local.server.port}")
-	private int port = 0;
+	private int port;
 
 	@Test
 	public void testHome() throws Exception {

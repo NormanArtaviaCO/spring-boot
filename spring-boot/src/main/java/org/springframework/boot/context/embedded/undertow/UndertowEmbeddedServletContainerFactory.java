@@ -117,7 +117,7 @@ public class UndertowEmbeddedServletContainerFactory
 
 	private String accessLogPattern;
 
-	private boolean accessLogEnabled = false;
+	private boolean accessLogEnabled;
 
 	private boolean useForwardHeaders;
 

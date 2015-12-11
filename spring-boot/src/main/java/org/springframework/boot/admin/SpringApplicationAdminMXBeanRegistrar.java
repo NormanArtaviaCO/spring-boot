@@ -58,7 +58,7 @@ public class SpringApplicationAdminMXBeanRegistrar
 
 	private final ObjectName objectName;
 
-	private boolean ready = false;
+	private boolean ready;
 
 	public SpringApplicationAdminMXBeanRegistrar(String name)
 			throws MalformedObjectNameException {

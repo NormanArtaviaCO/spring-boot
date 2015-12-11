@@ -80,9 +80,9 @@ public class EndpointMBeanExporter extends MBeanExporter
 
 	private volatile boolean autoStartup = true;
 
-	private volatile int phase = 0;
+	private volatile int phase;
 
-	private volatile boolean running = false;
+	private volatile boolean running;
 
 	private final ReentrantLock lifecycleLock = new ReentrantLock();
 
@@ -92,7 +92,7 @@ public class EndpointMBeanExporter extends MBeanExporter
 
 	private String domain = DEFAULT_DOMAIN;
 
-	private boolean ensureUniqueRuntimeObjectNames = false;
+	private boolean ensureUniqueRuntimeObjectNames;
 
 	private Properties objectNameStaticProperties = new Properties();
 

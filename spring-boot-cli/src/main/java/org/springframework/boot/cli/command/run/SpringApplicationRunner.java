@@ -41,9 +41,9 @@ import org.springframework.boot.cli.util.ResourceUtils;
  */
 public class SpringApplicationRunner {
 
-	private static int watcherCounter = 0;
+	private static int watcherCounter;
 
-	private static int runnerCounter = 0;
+	private static int runnerCounter;
 
 	private final SpringApplicationRunnerConfiguration configuration;
 

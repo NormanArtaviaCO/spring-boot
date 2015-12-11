@@ -31,7 +31,7 @@ public class JmsProperties {
 	/**
 	 * Specify if the default destination type is topic.
 	 */
-	private boolean pubSubDomain = false;
+	private boolean pubSubDomain;
 
 	/**
 	 * Connection factory JNDI name. When set, takes precedence to others connection

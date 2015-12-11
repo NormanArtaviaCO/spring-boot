@@ -57,7 +57,7 @@ public class HealthMvcEndpoint extends AbstractEndpointMvcAdapter<HealthEndpoint
 
 	private RelaxedPropertyResolver roleResolver;
 
-	private long lastAccess = 0;
+	private long lastAccess;
 
 	private Health cached;
 

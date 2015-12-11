@@ -44,7 +44,7 @@ public class FlywayProperties {
 	/**
 	 * Check that migration scripts location exists.
 	 */
-	private boolean checkLocation = false;
+	private boolean checkLocation;
 
 	/**
 	 * Enable flyway.

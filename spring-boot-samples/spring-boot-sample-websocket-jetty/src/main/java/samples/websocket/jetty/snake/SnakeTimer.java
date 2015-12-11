@@ -35,7 +35,7 @@ public class SnakeTimer {
 
 	private static final Logger log = LoggerFactory.getLogger(SnakeTimer.class);
 
-	private static Timer gameTimer = null;
+	private static Timer gameTimer;
 
 	private static final long TICK_DELAY = 100;
 

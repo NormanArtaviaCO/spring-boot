@@ -167,7 +167,7 @@ public class ResourceProperties implements ResourceLoaderAware {
 		/**
 		 * Enable HTML5 application cache manifest rewriting.
 		 */
-		private boolean htmlApplicationCache = false;
+		private boolean htmlApplicationCache;
 
 		@NestedConfigurationProperty
 		private final Strategy strategy = new Strategy();

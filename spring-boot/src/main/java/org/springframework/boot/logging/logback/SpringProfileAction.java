@@ -43,7 +43,7 @@ class SpringProfileAction extends Action implements InPlayListener {
 
 	private final Environment environment;
 
-	private int depth = 0;
+	private int depth;
 
 	private boolean acceptsProfile;
 

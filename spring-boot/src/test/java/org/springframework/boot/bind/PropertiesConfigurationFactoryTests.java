@@ -52,7 +52,7 @@ public class PropertiesConfigurationFactoryTests {
 
 	private boolean ignoreUnknownFields = true;
 
-	private String targetName = null;
+	private String targetName;
 
 	@Test
 	public void testValidPropertiesLoadsWithDash() throws Exception {
