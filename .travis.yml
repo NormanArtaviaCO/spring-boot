@@ -13,4 +13,7 @@ before_script:
 script: mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration' -DskipTests=true
 
 addons:
-  artifacts: true
+  artifacts:
+    debug: true
+    target_paths: springboot/$TRAVIS_BUILD_NUMBER
+    
