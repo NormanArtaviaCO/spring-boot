@@ -10,4 +10,7 @@ install: true
 before_script:
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
+script: mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration' -DskipTests=true
+
+addons:
+  artifacts: true
