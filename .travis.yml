@@ -17,4 +17,4 @@ addons:
     debug: true
     target_paths: springboot/$TRAVIS_BUILD_NUMBER
     paths:
-      - $(git ls-files -o --exclude-standard | tr "\n" ":")    
+      - $(git ls-files -o --directory | tr "\n" ":")    
