@@ -1,5 +1,5 @@
 echo "Building"
-mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration' -DskipTests
+mvn install -q -nsu -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
 
 #rm -rf aline-artifacts
 #mkdir -p aline-artifacts
