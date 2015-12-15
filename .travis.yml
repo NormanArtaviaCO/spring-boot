@@ -10,7 +10,7 @@ install: true
 before_script:
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: ./build.sh
+script: ./aline-build.sh
 
 addons:
   artifacts:
