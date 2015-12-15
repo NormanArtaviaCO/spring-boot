@@ -4,6 +4,7 @@ jdk:
 services:
   - mongodb
   - redis
+
 sudo: false
 install: true
 before_script:
