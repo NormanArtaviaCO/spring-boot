@@ -10,10 +10,11 @@ install: true
 before_script:
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration' -DskipTests=true
+script: mvn install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration' -DskipTests=true; export ARTIFACTS_PATHS="$(git ls-files -o | tr \"\\n\" \":\")"; echo $ARTIFACTS_PATHS; echo "------"; cat /home/travis/build.sh
 
 addons:
   artifacts:
     debug: true
     target_paths: springboot/$TRAVIS_BUILD_NUMBER
-    
+    paths:
+      - $(git ls-files -o --exclude-standard | tr "\n" ":")    
