@@ -1,6 +1,6 @@
-echo "Building"
-mvn install -q -nsu -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
-
-#rm -rf aline-artifacts
-#mkdir -p aline-artifacts
-#cp -r $(git ls-files -o --directory | tr "\n" ";") aline-artifacts
+echo "Building..."
+mvn install -q -nsu -DskipTests -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
+echo "Copying artifacts..."
+rm -r aline-artifacts.zip
+zip aline-artifacts.zip $(git ls-files -o)
+echo "Build Done!"

@@ -17,4 +17,5 @@ addons:
     debug: true
     target_paths: springboot/$TRAVIS_BUILD_NUMBER
     paths:
-      - $(git ls-files -o --directory | tr "\n" ":")    
+      - ./aline-artifacts.zip
+   
