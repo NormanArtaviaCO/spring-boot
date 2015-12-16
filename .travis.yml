@@ -4,9 +4,18 @@ jdk:
 services:
   - mongodb
   - redis
+
 sudo: false
 install: true
 before_script:
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: ./mvnw install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
+- mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
+- mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+script: ./aline-build.sh
+
+addons:
+  artifacts:
+    debug: true
+    target_paths: springboot/$TRAVIS_BUILD_NUMBER
+    paths:
+      - ./aline-artifacts.zip
+   
