@@ -4,7 +4,7 @@ echo "Copying artifacts..."
 rm -r aline-artifacts.zip
 zip aline-artifacts.zip $(git ls-files -o)
 echo "Build Done!"
-mvn test jacoco:report coveralls:report
+mvn -X test jacoco:report coveralls:report
 echo "Testing Done!"
 
 
