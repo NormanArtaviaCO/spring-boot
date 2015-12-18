@@ -250,36 +250,37 @@
 							</execution>
 						</executions>
 					</plugin>
-
-	              <!-- coverall integration begins -->
-	              <!-- Source: https://github.com/trautonen/coveralls-maven-plugin --> 
-					<plugin>
-					    <groupId>org.jacoco</groupId>
-					    <artifactId>jacoco-maven-plugin</artifactId>
-					    <version>0.7.5.201505241946</version>
-					    <!-- Not sure why executions tag is required -->
-					    <executions>
-					        <execution>
-					            <id>prepare-agent</id>
-					            <goals>
-					                <goal>prepare-agent</goal>
-					            </goals>
-					        </execution>
-					    </executions>
-					</plugin>
-					<plugin>
-					    <groupId>org.eluder.coveralls</groupId>
-					    <artifactId>coveralls-maven-plugin</artifactId>
-					    <version>4.1.0</version>
-					    <!-- Token not Required for travis-ci integration -->
-					    <!--configuration>
-					        <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
-					    </configuration-->
-					</plugin>
-		          <!-- coverall integration ends --> 
-
-
 				</plugins>
+				<pluginManagement>
+					<plugins>
+		                <!-- coverall integration begins -->
+		                <!-- Source: https://github.com/trautonen/coveralls-maven-plugin --> 
+						<plugin>
+						    <groupId>org.jacoco</groupId>
+						    <artifactId>jacoco-maven-plugin</artifactId>
+						    <version>0.7.5.201505241946</version>
+						    <!-- Not sure why executions tag is required -->
+						    <executions>
+						        <execution>
+						            <id>prepare-agent</id>
+						            <goals>
+						                <goal>prepare-agent</goal>
+						            </goals>
+						        </execution>
+						    </executions>
+						</plugin>
+						<plugin>
+						    <groupId>org.eluder.coveralls</groupId>
+						    <artifactId>coveralls-maven-plugin</artifactId>
+						    <version>4.1.0</version>
+						    <!-- Token not Required for travis-ci integration -->
+						    <!--configuration>
+						        <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
+						    </configuration-->
+						</plugin>
+			            <!-- coverall integration ends --> 
+					</plugins>
+		 		</pluginManagement>
 			</build>
 		</profile>
 		<profile>
