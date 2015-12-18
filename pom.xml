@@ -67,6 +67,18 @@
 					<artifactId>replacer</artifactId>
 					<version>1.5.3</version>
 				</plugin>
+				<plugins>
+					<plugin>
+	                    <groupId>org.jacoco</groupId>
+	                    <artifactId>jacoco-maven-plugin</artifactId>
+					    <version>0.7.5.201505241946</version>
+					</plugin>
+					<plugin>
+					    <groupId>org.eluder.coveralls</groupId>
+					    <artifactId>coveralls-maven-plugin</artifactId>
+					    <version>4.1.0</version>
+					</plugin>
+				</plugins>
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -251,20 +263,6 @@
 						</executions>
 					</plugin>
 				</plugins>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-		                    <groupId>org.jacoco</groupId>
-		                    <artifactId>jacoco-maven-plugin</artifactId>
-						    <version>0.7.5.201505241946</version>
-						</plugin>
-						<plugin>
-						    <groupId>org.eluder.coveralls</groupId>
-						    <artifactId>coveralls-maven-plugin</artifactId>
-						    <version>3.1.0</version>
-						</plugin>
-					</plugins>
-		 		</pluginManagement>
 			</build>
 		</profile>
 		<profile>
@@ -294,20 +292,6 @@
 						</executions>
 					</plugin>
 				</plugins>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-		                    <groupId>org.jacoco</groupId>
-		                    <artifactId>jacoco-maven-plugin</artifactId>
-						    <version>0.7.5.201505241946</version>
-						</plugin>
-						<plugin>
-						    <groupId>org.eluder.coveralls</groupId>
-						    <artifactId>coveralls-maven-plugin</artifactId>
-						    <version>3.1.0</version>
-						</plugin>
-					</plugins>
-		 		</pluginManagement>
 			</build>
 		</profile>
 	</profiles>
