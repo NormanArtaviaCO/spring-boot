@@ -14,7 +14,7 @@ script: ./aline-build.sh
 
 
 after_success:
-  - mvn jacoco:report coveralls:jacoco
+  - mvn test jacoco:report coveralls:report
 
 addons:
   artifacts:
