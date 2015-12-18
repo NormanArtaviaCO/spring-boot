@@ -12,6 +12,10 @@ before_script:
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
 script: ./aline-build.sh
 
+
+after_success:
+  - mvn jacoco:report coveralls:jacoco
+
 addons:
   artifacts:
     debug: true

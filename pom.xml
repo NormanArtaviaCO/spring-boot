@@ -67,7 +67,18 @@
 					<artifactId>replacer</artifactId>
 					<version>1.5.3</version>
 				</plugin>
-
+              <!-- coverall integration begins --> 
+	          <plugin>
+	            <groupId>org.jacoco</groupId>
+	            <artifactId>jacoco-maven-plugin</artifactId>
+	            <version>${maven.jacoco.version}</version>
+	          </plugin>
+	          <plugin>
+	            <groupId>org.eluder.coveralls</groupId>
+	            <artifactId>coveralls-maven-plugin</artifactId>
+	            <version>2.2.0</version>
+	          </plugin>
+	          <!-- coverall integration ends --> 
 			</plugins>
 		</pluginManagement>
 	</build>
