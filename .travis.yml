@@ -12,6 +12,9 @@ before_script:
 - mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
 script: ./aline-build.sh
 
+after_success:
+  - mvn test jacoco:report coveralls:report
+
 addons:
   artifacts:
     target_paths: springboot/$TRAVIS_BUILD_NUMBER
