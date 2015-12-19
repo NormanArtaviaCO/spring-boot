@@ -14,7 +14,6 @@ script: ./aline-build.sh
 
 addons:
   artifacts:
-    debug: true
     target_paths: springboot/$TRAVIS_BUILD_NUMBER
     paths:
       - ./aline-artifacts.zip
