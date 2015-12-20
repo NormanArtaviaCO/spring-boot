@@ -8,12 +8,12 @@ services:
 sudo: false
 install: true
 before_script:
-- mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
-- mvn install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
+- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
 script: ./aline-build.sh
 
 after_success:
-  - mvn package jacoco:report coveralls:report
+  - ./mvnw test jacoco:report coveralls:report
 
 addons:
   artifacts:
