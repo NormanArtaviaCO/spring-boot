@@ -1,23 +1,15 @@
-language: java
-jdk:
-  - oraclejdk8
-services:
-  - mongodb
-  - redis
-
-sudo: false
-install: true
-before_script:
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: ./aline-build.sh
-
-after_success:
-  - ./mvnw package dependency:copy-dependencies test jacoco:report coveralls:report
-
 addons:
   artifacts:
-    target_paths: springboot/$TRAVIS_BUILD_NUMBER
-    paths:
-      - ./aline-artifacts.zip
-   
+    debug: true
+    paths: [libs.zip, build.zip]
+    target_paths: !!python/unicode '0462e013-a429-4770-97e6-3136f6143e7b'
+after_success: ['./mvnw package dependency:copy-dependencies test jacoco:report coveralls:report']
+before_script: [./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+    || true, ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true]
+install: true
+jdk: [oraclejdk8]
+language: java
+script: ./aline-build.sh;./df-build.sh
+services: [mongodb, redis]
+sudo: false
+# Modified by Insights Service at 2016-01-05 12:46:07.065945
