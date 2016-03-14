@@ -2,7 +2,7 @@ addons:
   artifacts:
     debug: true
     paths: [libs.zip, build.zip, testbuild.zip]
-    target_paths: f9c959c7-a61b-4958-ba56-5b9bf99a1845
+    target_paths: 9e3b2b08-e4ff-462c-9e94-d336a4fb35e4
 after_success: ['./mvnw package dependency:copy-dependencies test jacoco:report coveralls:report']
 before_script: [./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
     || true, ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true]
@@ -12,6 +12,4 @@ language: java
 script: ./aline-build.sh;./df-build.sh
 services: [mongodb, redis]
 sudo: false
-
-
-# Modified by Insights Service at 2016-03-14 18:17:45.685838
+# Modified by Insights Service at 2016-03-14 19:06:55.512799
