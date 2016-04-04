@@ -1,12 +1,15 @@
-language: java
-jdk:
-  - oraclejdk8
-services:
-  - mongodb
-  - redis
-sudo: false
+addons:
+  artifacts:
+    debug: true
+    paths: [libs.zip, build.zip, testbuild.zip]
+    target_paths: 7f929609-34e9-4351-b3fb-bda5f541cfd1
+before_script: [./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+    || true, ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true]
 install: true
-before_script:
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true || true
-- ./mvnw install -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-script: ./mvnw install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration'
+jdk: [oraclejdk8]
+language: java
+script: [./mvnw install -q -nsu -Dmaven.test.redirectTestOutputToFile=true -P '!integration',
+  ./df-build.sh]
+services: [mongodb, redis]
+sudo: false
+# Modified by Insights Service at 2016-04-04 23:18:10.615906
